@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HotelHub | Hotel Menu</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">HotelHub</h1>
+
+      <div class="space-x-4">
+        <a href="index.html" class="text-blue-600 hover:underline">
+          ← Back
+        </a>
+
+        <a href="cart.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+          View Cart
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="py-10">
+    <div class="max-w-6xl mx-auto px-4">
+
+      <!-- Hotel Name -->
+      <h2 id="hotel-title" class="text-3xl font-semibold mb-8 text-center"></h2>
+
+      <!-- Dynamic Menu (JS se fill hoga) -->
+      <div id="menu-list" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- JS se items aayenge -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JS File -->
+  <script src="js/hotel.js"></script>
+
+</body>
+</html>
