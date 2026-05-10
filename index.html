@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HotelHub | Find Hotels & Order Online</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-blue-600">HotelHub</h1>
+
+        <nav class="space-x-4">
+          <a href="login.html" class="text-gray-700 hover:text-blue-600">
+            Login
+          </a>
+
+          <a href="orders.html" class="text-gray-700 hover:text-blue-600">
+            Orders
+          </a>
+
+          <a
+            href="cart.html"
+            class="relative text-gray-700 hover:text-blue-600"
+          >
+            Cart
+            <span
+              id="cart-count"
+              class="absolute -top-2 -right-3 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full"
+            >
+              0
+            </span>
+          </a>
+
+          <a
+            href="login.html"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
+            Register
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Search + Filter Section -->
+    <section class="py-10">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-semibold mb-4">
+          Find Best Hotels Near You
+        </h2>
+
+        <!-- Search Input -->
+        <input
+          id="search"
+          type="text"
+          placeholder="Search hotel by name..."
+          class="w-full md:w-1/2 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+
+        <!-- Price Filter -->
+        <div class="mt-4">
+          <select
+            id="price-filter"
+            class="px-4 py-2 border rounded-lg focus:outline-none"
+          >
+            <option value="">All Prices</option>
+            <option value="200">Below ₹200</option>
+            <option value="300">Below ₹300</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotel List -->
+    <section class="pb-12">
+      <div
+        id="hotel-list"
+        class="max-w-7xl mx-auto px-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <!-- Hotels will be rendered by JavaScript -->
+      </div>
+    </section>
+
+    <!-- JS File -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
